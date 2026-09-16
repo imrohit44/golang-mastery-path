@@ -14,7 +14,6 @@ func main() {
 
 	go produce(ch)
 
-	// Range loops over channel until closed
 	for val := range ch {
 		fmt.Println("Received:", val)
 	}
