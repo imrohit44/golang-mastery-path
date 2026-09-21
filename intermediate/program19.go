@@ -13,7 +13,6 @@ func main() {
 	port := os.Getenv("APP_PORT")
 	fmt.Println("Server configured to run on port:", port)
 
-	// Get a variable that doesn't exist, handling defaults
 	dbHost := os.Getenv("DB_HOST")
 	if dbHost == "" {
 		dbHost = "localhost" // Fallback default
