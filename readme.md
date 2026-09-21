@@ -1,46 +1,81 @@
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Go Logo" width="500"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" alt="Go Logo" width="400"/>
   
   # Go Mastery Path
-  *A comprehensive collection of Go programs from basic syntax to advanced concurrency.*
+  
+  *A comprehensive, 60-program curriculum taking you from absolute Go beginner to advanced systems engineer.*
+  
+  [![Go Version](https://img.shields.io/badge/Go-1.18+-00ADD8?logo=go)](https://go.dev/)
+  [![Code Quality](https://img.shields.io/badge/lint-golangci--lint-blue)](https://golangci-lint.run/)
+  [![License](https://img.shields.io/badge/license-MIT-green)](#)
 </div>
 
 ---
 
-This repository serves as a progressive reference and learning guide for the Go (Golang) programming language. The code is structured to take you from absolute beginner concepts to production-grade system patterns.
+This repository serves as a progressive reference and practical learning guide for the Go (Golang) programming language. The codebase is deliberately structured to scale in complexity, moving from basic syntax into standard library utilization, and finally into low-level primitives and high-throughput concurrency patterns.
 
-## 📁 Repository Structure
+## 📁 Curriculum & Repository Structure
 
-The programs are divided into three core progression levels:
+The curriculum contains 60 complete, executable programs divided into three core progression levels.
 
 ### 1. Basics (`/01-basics`)
-Focuses on Go's syntax, basic data structures, and standard execution flow.
-* Variables, constants, and types
-* Slices, arrays, and maps
-* Structs and pointers
-* Basic loops and conditionals
-* Simple Goroutines
+*Focuses on Go's core syntax, basic data structures, memory allocation, and standard execution flow.*
+
+| # | Topic / Program | # | Topic / Program |
+| :--- | :--- | :--- | :--- |
+| **01** | Hello, World! | **11** | Switch Statements |
+| **02** | Variables & Constants | **12** | The `defer` Keyword |
+| **03** | Control Flow (If/Else) | **13** | Variadic Functions |
+| **04** | For Loops & Iteration | **14** | Type Conversion |
+| **05** | Arrays & Slices | **15** | String Manipulation |
+| **06** | Multiple Return Values | **16** | Basic Error Creation |
+| **07** | Maps (Key-Value Pairs) | **17** | Reading User Input |
+| **08** | Structs (Custom Types) | **18** | Struct Methods (Receivers) |
+| **09** | Pointers & Memory | **19** | Time & Date Formatting |
+| **10** | Simple Goroutines | **20** | Random Number Generation |
 
 ### 2. Intermediate (`/02-intermediate`)
-Focuses on Go's standard library, custom types, and practical application patterns.
-* Interfaces and polymorphism
-* Custom error handling
-* Channels and synchronization
-* Worker pool patterns and Mutexes
-* JSON marshalling and basic `net/http` servers
+*Focuses on idiomatic Go, the standard library, interfaces, and foundational concurrency.*
+
+| # | Topic / Program | # | Topic / Program |
+| :--- | :--- | :--- | :--- |
+| **01** | Interfaces & Polymorphism | **11** | Struct Composition (Embedding) |
+| **02** | Custom Error Handling | **12** | WaitGroups for Concurrency |
+| **03** | Channels & Synchronization | **13** | Type Assertions & Switches |
+| **04** | Worker Pool Pattern | **14** | Custom Struct Sorting |
+| **05** | Non-Blocking Select & Timeouts| **15** | Command-Line Flags |
+| **06** | Mutex & Thread-Safe State | **16** | HTTP Client Requests |
+| **07** | JSON Marshalling | **17** | Buffered Channels |
+| **08** | Basic HTTP Web Server | **18** | Periodic Tasks (Tickers) |
+| **09** | Context Cancellation | **19** | Environment Variables |
+| **10** | File I/O Operations | **20** | Basic Unit Testing |
 
 ### 3. Advanced (`/03-advanced`)
-Focuses on low-level primitives, high-throughput concurrency, and memory management.
-* Context cancellation and graceful server shutdowns
-* High-performance object pooling (`sync.Pool`)
-* Lock-free atomic operations (`sync/atomic`)
-* Reflection and dynamic struct tag parsing
-* Zero-copy memory conversions and pipeline patterns
+*Focuses on low-level primitives, system design patterns, metaprogramming, and performance optimization.*
 
-## 🚀 Getting Started
+| # | Topic / Program | # | Topic / Program |
+| :--- | :--- | :--- | :--- |
+| **01** | Graceful Shutdown & Context | **11** | Request-Scoped Context Data |
+| **02** | Object Pooling (`sync.Pool`) | **12** | Generics (Type-Safe Data) |
+| **03** | Fan-In Concurrency Pattern | **13** | Functional Options Pattern |
+| **04** | Lock-Free Atomic Operations | **14** | Bounded Concurrency (Semaphores) |
+| **05** | Custom HTTP Middleware | **15** | Custom JSON Unmarshaling |
+| **06** | Reflection & Struct Tags | **16** | Dynamic Struct Mutation |
+| **07** | Zero-Copy Memory Conversion | **17** | In-Memory Pub/Sub Event Bus |
+| **08** | Pipeline & Error Propagation | **18** | Runtime Memory Profiling |
+| **09** | Token Bucket Rate Limiting | **19** | TCP Server with Deadlines |
+| **10** | OS Signal Handling | **20** | Singleflight Request Coalescing |
 
-To run any of the programs locally, ensure you have [Go installed](https://go.dev/doc/install).
+---
+
+##  Getting Started
+
+### Prerequisites
+* Go 1.18 or higher (required for Generics in the advanced section).
+
+### Installation & Execution
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/golang-mastery-path.git](https://github.com/yourusername/golang-mastery-path.git)
+   git clone [https://github.com/rohitmohan/golang-mastery-path.git](https://github.com/rohitmohan/golang-mastery-path.git)
+   cd golang-mastery-path
